@@ -6,7 +6,7 @@ public class QuickSortSorterImple <T> implements Sorter<T> {
 
     @Override
     public void sort(T[] arr, Comparator<T> c) {
-        quickSort(arr,0,arr.length, c);
+        quickSort(arr,0,arr.length - 1, c);
     }
 
     private int partition(T arr[], int begin, int end, Comparator<T> c) {
